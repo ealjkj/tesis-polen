@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{computer_vision}
+Reinhard Klette.
+\newblock {\em Concise Computer Vision - An Introduction into Theory and
+  Algorithms}.
+\newblock 01 2014.
+
+\bibitem{Mitchell}
+Tom~M. Mitchell.
+\newblock {\em Machine Learning}.
+\newblock McGraw-Hill series in computer science. McGraw-Hill, 1 edition, 1997.
+
+\bibitem{CNNdefinition}
+Linan Zhang and Hayden Schaeffer.
+\newblock Forward stability of resnet and its variants.
+\newblock {\em CoRR}, abs/1811.09885, 2018.
+
+\bibitem{deeplearningbook}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+
+\bibitem{padding}
+Md.~Amirul Islam, Matthew Kowal, Sen Jia, Konstantinos~G. Derpanis, and Neil
+  D.~B. Bruce.
+\newblock Position, padding and predictions: {A} deeper look at position
+  information in cnns.
+\newblock {\em CoRR}, abs/2101.12322, 2021.
+
+\bibitem{type_of_paddings}
+Guilin Liu, Kevin~J. Shih, Ting{-}Chun Wang, Fitsum~A. Reda, Karan Sapra,
+  Zhiding Yu, Andrew Tao, and Bryan Catanzaro.
+\newblock Partial convolution based padding.
+\newblock {\em CoRR}, abs/1811.11718, 2018.
+
+\bibitem{pooling_analysis}
+Y-Lan Boureau, Jean Ponce, and Yann LeCun.
+\newblock A theoretical analysis of feature pooling in visual recognition.
+\newblock In {\em Proceedings of the 27th International Conference on
+  International Conference on Machine Learning}, ICML'10, page 111–118,
+  Madison, WI, USA, 2010. Omnipress.
+
+\bibitem{batchNormalization}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock {\em CoRR}, abs/1502.03167, 2015.
+
+\bibitem{alexnet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Proceedings of the 25th International Conference on Neural
+  Information Processing Systems - Volume 1}, NIPS'12, page 1097–1105, Red
+  Hook, NY, USA, 2012. Curran Associates Inc.
+
+\bibitem{zfnet}
+Matthew~D. Zeiler and Rob Fergus.
+\newblock Visualizing and understanding convolutional networks.
+\newblock {\em CoRR}, abs/1311.2901, 2013.
+
+\bibitem{resnet0}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock {\em CoRR}, abs/1512.03385, 2015.
+
+\bibitem{stable_resnets}
+Eldad Haber and Lars Ruthotto.
+\newblock Stable architectures for deep neural networks.
+\newblock {\em CoRR}, abs/1705.03341, 2017.
+
+\bibitem{book:110336}
+John~C. Butcher.
+\newblock {\em Numerical methods for ordinary differential equations}.
+\newblock Wiley, 2nd ed edition, 2008.
+
+\bibitem{optimal_principle}
+Richard Bellman.
+\newblock {\em Dynamic Programming}.
+\newblock Princeton Landmarks in Mathematics and Physics. Dover Publications,
+  2003.
+
+\bibitem{CIFAR}
+Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.
+\newblock Cifar-10 (canadian institute for advanced research).
+
+\bibitem{polen}
+Pollen challenge, 2020.
+
+\end{thebibliography}

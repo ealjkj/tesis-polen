@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Ecuaciones diferenciales}
+Una ecuación diferencial se representa de la siguiente manera:
+\begin{equation}
+    \frac{dy}{dx} = f(x,y(x))
+\end{equation}
+Donde $f: \mathbb R^m \to \mathbb R^n$.
+En caso de que no se genere ambiguedad, es posible escribir $y$ en lugar de $y(x)$ y $y'$ para referirse a la derivada de $y$ con respecto a $x$:
+\begin{equation}
+    y' = f(x,y)
+\end{equation}
+
+\section{Problemas de valor inicial}
+Considérese el siguiente problema de valor inicial (IVP por sus siglas en inglés)
+\begin{align}
+    \label{ode} y'(t) = f(t,y),& \quad t>0\\
+    \label{initial_value} y(t_0) = \nu,&
+\end{align}
+donde $t\in [t_0, t_f]$. 
+
+\subsection{Existencia, unicidad y continuidad de soluciones}
+\begin{theorem}
+    Sea $f: [a_1,b_1] \times [a_2, b_2]$ una una función Lipschitz continua en la segunda entrada y $a_2 < y_a < b_2$. Entonces existe un $c\in [a_1, b_1]$ tal que el IVP
+    \begin{equation}
+        \left\{\quad \begin{matrix}
+            y' = f(t,y) \\
+            y(a_1) = y_a \\
+            t \in [a_1,c]
+        \end{matrix}\right.
+    \end{equation} 
+    tiene exactamente una solución $y(t)$. Aún más, si $f$ es Lipschitz continua en $[a_1, b_1]\times (-\infty, \infty)$, entonces existe exactamente una solución en $[a_1, b_1]$
+\end{theorem}
+\subsection{Método de Euler}
+La manera más elemental para resolver el IVP (\ref{ode})- (\ref{initial_value}) es con el método de Euler. 
+
+Particionemos el intervalo $[t_0, t_f]$ en $n$ partes iguales, obteniendo así la sucesión 
+$$t_0, t_0 + h, t_0 + 2h, ... , t_0 + nh,$$
+donde
+$$h = \frac{t_f - t_0}{n}.$$
+Denotaremos $t_i = t_0 + ih$ y  $y_i = y(t_i)$. De modo que tenemos la siguiente sucesión:
+\begin{equation}
+    t_0 < t_1 < t_2 < \cdots < t_n = t_f.
+\end{equation}
+Lo que haremos será aproximar las soluciones $y_i$, y a estas aproximaciones les llamaremos $u_i$, teniendo en cuenta que $u_0 = y_0$. Para ello, requerimos la expansión de Taylor de $y(t + h)$.
+\begin{equation}
+    \label{taylor}
+    y(t + h) = y(t) + hy'(t) + R_1(t),
+\end{equation}
+donde $R_1(t)$ es el error de truncamiento local. Sustituyendo $y'(t) = f(t, y(t))$, obtenemos 
+\begin{equation}
+    y(t+h) = y(t) + hf(t,y(t)) + R_1(t).
+\end{equation}
+Sustituyendo $t = t_i$ con $i < n$ obtenemos que
+\begin{equation}
+    y(t_i + h) = y(t_i) + hf(t_i, y(t_i)) + R_1(t_i)
+\end{equation}.
+Por lo tanto, substrayendo el error de truncamiento local, podemos obtener una sucesión que aproxime nuestra solución $y(t)$:
+\begin{equation}
+    u_{i+1} = u_i + hf(t_i, u_i), \quad u_0 = y_0.
+\end{equation} 
+
+\subsubsection{Error de truncamiento local}
+En general, el error de truncamiento local de un método numérico, es el error generado a partir de una iteración.
+
+Asumiendo que en la identidad (\ref{taylor}), $y(t)$ es doblemente diferenciable en el intervalo $(t_0, t_f)$, ocurre que
+\begin{equation}
+    R_1(t) = \frac{1}{2!} h^2y''(\xi),  \quad \xi\in (t, t+h)
+\end{equation}
+\subsubsection{Error de truncamiento global}
+El error de truncamiento global de un método numérico, es el error generado por multiples iteraciones. En este caso, asumiremos una cota superior $mh^2$ para la norma del error de truncamiento local. Además asumimos Lipschitz continuidad para $f$, cuya constante de Lipschitz es $L$.
+
+Denotemos $a_i$ y $b_i$ como los siguientes errores:
+\begin{equation}
+    \alpha_i = y_i - u_i
+\end{equation}
+\begin{equation}
+    \beta_i = f(t_i, y_i) - f(t_i, u_i)
+\end{equation}
+Debido a la Lipschitz continuidad, debe pasar que
+$$\|f(t_i, y_i) - f(t_i, u_i)\| \leq L \| y_i - u_i\|$$
+$$\Rightarrow \|\beta_i\| \leq L \|\alpha_i\|$$
+\textcolor{red}{Falta terminar de escribir esta prueba}
+\begin{definition}
+    Un método numérico se dice que es de orden $\rho$ cuando $|u_n - y_n| = \mathcal{O}(h^\rho)$. \textcolor{red}{Escribir la notación bigO en los preliminares}
+\end{definition}
+\section{Estabilidad}
+
+\section{Métodos de Runge-Kutta}
+Es posible generalizar el método de Euler, evaluando la derivada multiples veces en un paso. Esta idea se le atribuye a Runge \cite{book:110336}. y en 1901 Kutta contribyó a las ideas. Dando paso a métodos de orden 4 y el primer método de orden 5, denominados métodos de Runge-Kutta.
+\subsection{Método de Euler modificado}
+El siguiente método, es un ejemplo de un método de Runge-Kuta, el cuál usaremos para desarrollar las ideas tras los métodos generales.
+\begin{align*}
+    k_1 &= f(t_n, u_n),\\
+    k_2 &= f(t_n + \tfrac{1}{2}h,u_n + \tfrac{1}{2}hk_1),\\
+    u_{n+1} &= u_n + hk_2,\\
+    t_{n+1} &= t_{n}+h.
+\end{align*}
+Este es un método de segundo orden. 
+\textcolor{red}{Falta hablar de qué significa que algo sea de orden $n$ en algún punto del capítulo. Además falta cambiar la notación, porque en algunos casos $n$ es un subíndice y en algunos casos es el número total de etapas}
+\subsection{Método general}
+El método de Runge-Kutta general con $s$ etapas se puede definir usando $s^2 + 2s$ números
+\begin{equation}
+    a_{i,j}, \quad i,j = 1,2,..., n. \qquad b_i, c_i, \quad i= 1, 2, ..., n,
+\end{equation}
+usando el siguiente esquema
+
+\begin{equation}
+    u_{n+1} = u_n + h\sum_{i=1}^sb_ik_i.
+\end{equation}
+En donde la sucesión $\{k_i\}$ es calculada usando la función $f$:
+\begin{equation}
+    k_i = f\left(t_n + c_ih, u_n + h\sum_{i=1}^sa_{i,j}k_i\right), \quad i = 1, 2, ..., s.
+\end{equation}
+Es posible determinar si el método es explícito o implícito, basándose en la matriz $A = \{a_{i,j}\}$. En caso de que sea una matriz triangular inferior, con todos los elementos de la diagonal iguales a cero ($a_{i,j} = 0$ para $j = i, i+1, ...,s$) el esquema es explícito.
+
+
+Las siguientes relaciones, son conocidas como condiciones de orden
+\begin{equation}
+    \sum_{i=1}^s b_i=1, \quad \sum_{i,j=1}^sb_ia_{i,j}=\frac{1}{2}, \quad \sum_{i,j,k=1}^sb_i a_{i,j} a_{j,k}=\frac{1}{6}, \quad  \sum_{i,j,k=1}^sb_ia_{i,j}a_{i,k}=\frac{1}{3}
+\end{equation}
+y aseguran esquemas de al menos orden 3.
+
+\subsection{Runge Kutta de orden 4 (RK4)}
+Uno de los métodos más conocidos es el de orden 4
+\begin{equation}
+    u_{i+1} = u_i + \frac{h}{6}(s_1 + 2s_2 + 2s_3 + s_4),
+\end{equation}
+donde 
+\begin{align*}
+    s_1 &= f(t_i, w_i) \\
+    s_2 &= f\left(t_i +\frac{h}{2}, w_i+\frac{h}{2}s_1\right)\\
+    s_3 &= f\left(t_i +\frac{h}{2}, w_i+\frac{h}{2}s_2\right)\\
+    s_4 &= f\left(t_i + h, w_i+hs_3\right).
+\end{align*}.
+La simlicidad de este método, hace que sea muy fácil de programar, y al ser de orden 4, se prefiere por sobre otos métodos como Euler, o el Trapezoide. Como se puede apreciar, RK4 es un método de orden 4 y además tiene 4 etapas (i.e. $s=4$). Sin embargo, no se conoce cuántas etapas son necesarias para esquemas de órdenes mayores a 8. 
+\subsection{Métodos de Runge Kutta simplécticos}
+\begin{definition}
+    Un esquema de Runge Kutta se dice simpléctico si satisface la relación 
+    \begin{equation}
+        b_ia_{i,j} + b_ja_{j,i} - b_ib_j = 0, \quad i,j=1, ..., s.
+    \end{equation}
+\end{definition}
+\textcolor{red}{Falta explicar la importancia de la propiedad simplectica}
+\subsection{Métodos implícitos}
+Los métodos numéricos analizados hasta este momento se conocen como métodos explícitos, debido a que es posible calcular $u_{i+1}$ conociendo el valor $u_i$. 
+\subsubsection{Euler hacia atrás}
+Una versión implícita de Euler se conoce como Euler hacia atrás. 
+\begin{align}
+    u_0  &= y_0 \\
+    u_{i+1} &= u_i + hf(t_{i+1}, u_{i+1})
+\end{align}
+Difiere del método de Euler tradicional en que la "pendiente" que se usa involucra $u_{i+1}$.
+\textcolor{red}{No sé si escribir la versión intuitiva de Euler, para que tenga sentido este término de "pendiente".}

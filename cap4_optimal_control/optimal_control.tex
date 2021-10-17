@@ -1,0 +1,131 @@
+%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Teoría de control óptimo}
+    
+Cuando hablamos de sistemas, nos referimos a un proceso que cambia de estado conforme pasa el tiempo. En nuestro caso pensemos en un sistema dinámico definido en el intervalo $[0, T]$ como
+\begin{equation}
+    \label{ch2system}
+    \dot x =f(x(t),t), \quad x(0) = x_0,  
+\end{equation}
+donde $x(t)$, conocida como la \textsl{variable de estado} puede representar la producción de alimento en un tiempo $t$, el dinero recaudado en un tiempo $t$, o en general el estado de un proceso en un tiempo $t$. En logística y física, existen variables que podemos controlar, como la cantidad de publicidad, o la reinversión de capital cada cierto momento. Con lo que podemos extender nuestro sistema  (\ref{ch2system}) al siguiente:
+\begin{equation}
+    \label{ch2controlsystem}
+    \dot x = f(x(t),u(t),t), \quad x(0) = x_0,
+\end{equation}
+donde la variable $u(t)$ es denominada \textsl{variable de control}. Conociendo la variable de control, es posible determinar la solución para $x$ en el sistema (\ref{ch2controlsystem}). El problema de control óptimo reside en maximizar la \textsl{función objetivo}, definida como
+\begin{equation}
+    J = \int_0^T F(x(t), u(t), t)dt + S[x(T), T].
+\end{equation}
+Donde $F$ puede es conocida como \textcolor{red}{cómo es conocida} y la función $S$ determina el \textcolor{red}{traducir salvage} en el estado final $x(T)$ en el tiempo $T$. Se denotará al conjunto de calores posibles de $u(t)$ como $\Omega(t)$.
+
+\begin{definition}
+    El \textsl{problema de control óptimo} es encontrar un valor admisible $u^*$ tal que 
+    \begin{equation}
+        \label{ch2umax}
+        u^* = \max_{u(t)\in \Omega(t)}\left\{\int_0^T F(x, u, t)dt + S(x(T), T)\right\}
+    \end{equation}
+    con la condición 
+    \begin{equation}
+        \label{ch2dynamicCondition}
+        \dot x = f(x,u,t), \quad x(0) = 0.
+    \end{equation}
+    La trayectoria óptima denotada como $x^*$ es la trayectoria que se obtiene cuando $u = u^*$.
+\end{definition}
+
+%Ecuación de Hamilton Jacobi Bellman
+\section{La ecuación de Hamilton-Jacobi-Bellman}
+Sea $V: \R^n \times \R \to \R$ una función definida por
+\begin{equation}
+    \label{value_function}
+    V(x,t) = \max_{u(s)\in \Omega(s)}\left\{\int_t^T F(x(s), u(s), s)ds + S(x(T), T)\right\}
+\end{equation}
+donde $s \geq t$.
+Sea $\delta t$ un diminuto incremento en el tiempo, nótese que 
+\begin{align*}
+    V(x,t) - V(x(t + \delta t), t + \delta t) &= \max_{u(s)\in \Omega(s)}\left\{\int_t^T F(x(s), u(s), s)ds + S(x(T), T)\right\}  \\
+    & \quad - \max_{u(s)\in \Omega(s)}\left\{\int_{t+ \delta}^T F(x(s), u(s), s)ds + S(x(T), T)\right\} \\
+\end{align*}
+Lo cuál, gracias al principio de optimalidad \cite{optimal_principle} se tiene que 
+\begin{equation}
+    \label{step_one}
+   V(x(t), t) - V(x(t + \delta t), t + \delta t) = \max_{u(\tau)\in \Omega(\tau)} \left\{ \int_{t}^{t+ \delta t} F(x(\tau), u(\tau), \tau)\right\},
+\end{equation} 
+y por consiguiente
+\begin{equation}
+    \label{step_two}
+    V(x(t), t) = \max_{u(\tau)\in \Omega(\tau)} \left\{ \int_{t}^{t+ \delta t} F(x(\tau), u(\tau), \tau) + V(x(t + \delta t), t + \delta t)\right\}.
+ \end{equation} 
+ Debido a que $F$ es una función continua, la integral en (\ref{step_two}) es igual a $F(x,u,t)\delta t$. Por consiguiente:
+ \begin{equation}
+    \label{2.11}
+     V(x,t) = \max_{u\in \Omega(t)} F(x,u,t)\delta t + V[x(t+\delta t), t + \delta t] + o(\delta t)
+ \end{equation} 
+ \textcolor{red}{falta explicar lo que es $o(\delta t)$. Podría ser lo mismo que $O(\delta t)$ pero aún no estoy seguro. El libro dice que por definición $\lim_{\delta t \to 0} \frac{o(\delta t)}{\delta t} = 0$.}
+ Asumiendo que nuestra función $V$ es continuamente diferenciable en ambas entradas podemos hacer uso de la expansión de Taylor de $V$ en $\delta t$:
+ \begin{equation}
+    V[x(t + \delta t), t + \delta t] = V(x,t) + [V_x(x,t)\dot x + V_t(x,t)]\delta t + o(\delta t)
+ \end{equation}
+ Sustituyendo (\ref{ch2controlsystem}) en (\ref{2.11}) obtenemos que 
+ \begin{equation}
+     V(x,t) = \max_{u\in \Omega(t)} \{F(x,u,t)\delta t + V(x,t) + V_x(x,t)f(x,u,t)\delta t + V_t(x,t)\delta t\} + o(\delta t)
+ \end{equation}
+Cancelando $V(x,t)$ de ambos lados y dividiendo entre $\delta t$ se deduce que
+\begin{equation}
+    0 = \max_{u\in \Omega(t)} \{F(x,u,t) + V_x(x,t)f(x,u,t) + V_t(x,t)\} + \frac{o(\delta t)}{\delta t},
+\end{equation}
+con lo que si $\delta t \to 0$ se tiene que 
+\begin{equation}
+    \label{pre_hamiltonian}
+    0 = \max_{u\in \Omega(t)} \{F(x,u,t) + V_x(x,t)f(x,u,t) + V_t(x,t)\}
+\end{equation}
+dónde si se evalúa $t=T$ en $V$ se obtiene que 
+\begin{equation}
+    V(x,T) = S(x,T).
+\end{equation}
+Cuando nuestra función $V$ es aplicada en el estado óptimo $x*$ obtenemos un nuevo vetor
+\begin{definition}(Vector de retorno marginal)
+    Sea $V$ la función definida en (\ref{value_function}), el vector de retorno marginal $\lambda(t)$ se define como
+    \begin{equation}
+        \lambda(t) = V_x(x^*(t),t):=V_x(x,t)|_{x=x^*}
+    \end{equation}
+\end{definition}
+A continuación describiremos el concepto de Hamiltoniano.
+\begin{definition}
+    Considérese el sistema (\ref{ch2umax})-(\ref{ch2dynamicCondition}). Diremos que el hamiltoniano $H: \R^n\times \R^m \times \R^n \times \R \to \R$ del sistema como 
+    \begin{equation}
+        H(x,u,\lambda, t) = F(x,u,t) + \lambda f(x,u,t).
+    \end{equation}
+\end{definition}
+La ecuación (\ref{pre_hamiltonian}) puede reescribirse como
+\begin{equation}
+    \max_{u\in \Omega(t)}[H(x,u,V_x,t) + V_t] = 0
+\end{equation}
+la cuál se conoce como \textsl{Ecuación de Hamilton-Jacobi-Bellman}(HJB). Más aún, ya que $V_t$ no depende de $u$ es posible retirar el $V_t$ del operador $\max$.
+\begin{equation}
+    \label{HJB}
+    \max_{u\in \Omega(t)}[H(x,u,V_x,t)] + V_t = 0
+\end{equation}
+Gracias a la definición de nuestro control óptimo $u^*$, cualquier $u\in \Omega(t)$, satisface que
+\begin{equation}
+    H[x^*(t), u^*(t), \lambda(t), t] + V_t(x^*(t),t ) \geq H[x^*(t), u(t), \lambda(t), t] + V_t(x^*(t),t )
+\end{equation}
+\begin{equation}
+    \Rightarrow H[x^*(t), u^*(t), \lambda(t), t]  \geq H[x^*(t), u(t), \lambda(t), t] 
+\end{equation}
+
+\section{Ecuación adjunta}
+El lado izquierdo de (\ref{HJB}) se maximiza con $x = x^*$ y $u = u^*$ y el valor máximo que alcanza es cero. \textcolor{red}{Justificar esta parte}. Sea $x(t) = x^*(t) + \delta x(t)$, un camino distinto al camino óptimo. Sea $t\in [0,T]$  se tiene que 
+\begin{align}
+    0 &= H[x^*(t), u^*(t), V_x(x^*(t), t), t] + V_x(x^*(t),  t) \\
+     &\geq H[x(t), u^*(t), V_x(x(t), t), t] + V_x(x(t), t).
+\end{align}
+\textcolor{red}{también justificar esta parte. En teoría, tiene lógica porque $x^*$ es el camino óptimo, pero hay que analizarlo bien.}
+\section{Principio del Máximo}
+
+ %------------- Notas del capítulo
+ \section{Notas del capítulo}
+ \begin{enumerate}
+     \item Añadir el libro de Suresh P. Sethi. Optimal Control Theory a las referencias.
+     \item De la ecuación \ref{step_one} a la ecuación \ref{step_two} no tengo muy claro como se llega. Falta definir anteriormente qué es el principio de optimalidad y describir claramente por qué aplica en este caso. 
+     \item Aún falta justificar varias cositas de control óptimo. Además, la redacción es casi idéntica al libro.
+ \end{enumerate}

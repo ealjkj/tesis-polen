@@ -1,0 +1,72 @@
+\documentclass[12pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{MnSymbol}
+\usepackage{wasysym}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage[margin=2.5cm,left=3cm, includehead]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{cite}
+
+% Theorems and definitions
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{exercise}[theorem]{Ejercicio}
+\newtheorem{proposition}[theorem]{Proposición}
+\newtheorem{definition}[theorem]{Definición}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{obsservation}[theorem]{Observación}
+\newtheorem{example}[theorem]{Ejemplo}
+\newtheorem{notation}[theorem]{Notación}
+\newtheorem{lemma}[theorem]{Lema}
+
+%% NEW Comands
+\newcommand{\R}{\mathbb R}  
+\newcommand{\N}{\mathbb N}  
+\newcommand{\Z}{\mathbb Z}  
+\newcommand{\mf}[1]{\mathbf{#1}}
+
+\begin{document}
+\title{Tesis primera parte.}
+\author{Jorge Ballote}
+\thispagestyle{plain}
+\pagenumbering{Roman}
+% \input{agradecimientos.tex}
+\tableofcontents
+% \input{resumen.tex}
+\newpage
+\pagenumbering{arabic}
+
+\input{../cap1_preliminares/intro.tex}
+\input{../cap2_CNNs/cnns.tex}
+\input{../cap3_ODEs/odes.tex}
+\input{../cap4_optimal_control/optimal_control.tex}
+\input{../cap6_NODES/nodes.tex}
+\input{../cap5_experimentos/experimentacion.tex} 
+% \input{optimal.tex}
+% \appendix
+% \input{apendix1.tex}
+
+
+\bibliographystyle{unsrt}
+\bibliography{papers}
+
+\chapter{Notas}
+    \begin{enumerate}
+        \item La notitas rojas son cosas que aún deben investigarse o cambiarse. Las notas azules representan textos que no están mal, pero que pueden escribirse de una mejor manera.
+        \item En preeliminares pretendo definir lo que es una imagen (una función) y un kernel.
+    \end{enumerate}
+
+\end{document}

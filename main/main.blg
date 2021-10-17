@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: papers.bib
+Warning--entry type for "polen" isn't style-file defined
+--line 431 of file papers.bib
+Warning--I didn't find a database entry for ""
+Warning--empty publisher in computer_vision
+Warning--empty journal in CIFAR
+Warning--empty year in CIFAR
+You've used 16 entries,
+            1791 wiz_defined-function locations,
+            535 strings with 5756 characters,
+and the built_in function-call counts, 3132 in all, are:
+= -- 278
+> -- 150
+< -- 2
++ -- 57
+- -- 41
+* -- 141
+:= -- 498
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 185
+empty$ -- 294
+format.name$ -- 41
+if$ -- 734
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 20
+newline$ -- 80
+num.names$ -- 15
+pop$ -- 59
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 113
+stack$ -- 0
+substring$ -- 40
+swap$ -- 57
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 17
+width$ -- 18
+write$ -- 173
+(There were 5 warnings)

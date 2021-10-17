@@ -1,0 +1,59 @@
+\documentclass[12pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{MnSymbol}
+\usepackage{wasysym}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage[margin=2.5cm,left=3cm, includehead]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\renewcommand{\baselinestretch}{1.5}
+
+% Theorems and definitions
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{exercise}[theorem]{Ejercicio}
+\newtheorem{proposition}[theorem]{Proposición}
+\newtheorem{definition}[theorem]{Definición}
+\newtheorem{corolary}[theorem]{Corolario}
+\newtheorem{obsservation}[theorem]{Observación}
+\newtheorem{example}[theorem]{Ejemplo}
+\newtheorem{lemma}[theorem]{Lema}
+
+%% NEW Comands
+\newcommand{\R}{\mathbb R}  
+\newcommand{\N}{\mathbb N}  
+\newcommand{\Z}{\mathbb Z}  
+
+
+\begin{document}
+\title{Tesis primera parte.}
+\author{Jorge Ballote}
+\thispagestyle{plain}
+\pagenumbering{Roman}
+
+
+% \input{agradecimientos.tex}
+% \input{resumen.tex}
+\newpage
+\pagenumbering{arabic}
+\input{intro.tex}
+% \input{optimal.tex}
+% \appendix
+% \input{apendix1.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{../main/papers.bib}
+    
+
+\end{document}
