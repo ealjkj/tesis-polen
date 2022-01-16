@@ -1,64 +1,76 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Preliminares}{1}% 
-\contentsline {section}{\numberline {1.1}Resultados de Cálculo y Álgebra lineal}{1}% 
-\contentsline {section}{\numberline {1.2}Visión Computacional}{4}% 
-\contentsline {section}{\numberline {1.3}Inteligencia artificial y Aprendizaje profundo}{5}% 
-\contentsline {subsection}{\numberline {1.3.1}Sobreajusto y Desajuste}{5}% 
-\contentsline {subsection}{\numberline {1.3.2}Regularización}{6}% 
-\contentsline {subsection}{\numberline {1.3.3}Función de activación. }{7}% 
-\contentsline {subsection}{\numberline {1.3.4}Transferencia de aprendizaje}{8}% 
-\contentsline {subsection}{\numberline {1.3.5}Conjuntos desbalanceados}{9}% 
-\contentsline {subsubsection}{Afrontar un problema con un conjunto desbalanceado}{10}% 
-\contentsline {subsubsection}{Métricas distintas a la exactitud}{11}% 
-\contentsline {subsection}{\numberline {1.3.6}Redes completamente conectadas}{12}% 
-\contentsline {subsection}{\numberline {1.3.7}Clasificación de imágenes}{12}% 
-\contentsline {section}{\numberline {1.4}Notas del capítulo}{13}% 
-\contentsline {chapter}{\numberline {2}Introducción a las redes neuronales convolucionales}{15}% 
-\contentsline {section}{\numberline {2.1}Convoluciones}{15}% 
-\contentsline {subsection}{\numberline {2.1.1}Stride}{17}% 
-\contentsline {subsection}{\numberline {2.1.2}Convoluciones con múltiples canales}{17}% 
-\contentsline {subsection}{\numberline {2.1.3}Padding}{18}% 
-\contentsline {subsection}{\numberline {2.1.4}\leavevmode {\color {red}Pooling}}{20}% 
-\contentsline {subsubsection}{\leavevmode {\color {red}Global pooling layers} }{21}% 
-\contentsline {subsection}{\numberline {2.1.5}\leavevmode {\color {blue}Convolución como una operación lineal}}{22}% 
-\contentsline {section}{\numberline {2.2}Redes Neuronales Convolucionales}{22}% 
-\contentsline {subsection}{\numberline {2.2.1}Descenso del Gradiente Estocástico}{23}% 
-\contentsline {subsection}{\numberline {2.2.2}Propagación hacia atrás}{24}% 
-\contentsline {subsection}{\numberline {2.2.3}Normalización por Lotes}{24}% 
-\contentsline {subsection}{\numberline {2.2.4}Desvanecimiento del gradiente}{25}% 
-\contentsline {subsection}{\numberline {2.2.5}CNNs en el estado del arte}{25}% 
-\contentsline {section}{\numberline {2.3}ResNet}{26}% 
-\contentsline {subsection}{\numberline {2.3.1}Estabilidad en las redes Neuronales}{27}% 
-\contentsline {section}{\numberline {2.4}Notas del capítulo}{27}% 
-\contentsline {chapter}{\numberline {3}Ecuaciones diferenciales}{29}% 
-\contentsline {section}{\numberline {3.1}Problemas de valor inicial}{29}% 
-\contentsline {subsection}{\numberline {3.1.1}Existencia, unicidad y continuidad de soluciones}{30}% 
-\contentsline {subsection}{\numberline {3.1.2}Método de Euler}{30}% 
-\contentsline {subsubsection}{Error de truncamiento local}{31}% 
-\contentsline {subsubsection}{Error de truncamiento global}{31}% 
-\contentsline {section}{\numberline {3.2}Estabilidad}{32}% 
-\contentsline {section}{\numberline {3.3}Métodos de Runge-Kutta}{32}% 
-\contentsline {subsection}{\numberline {3.3.1}Método de Euler modificado}{32}% 
-\contentsline {subsection}{\numberline {3.3.2}Método general}{32}% 
-\contentsline {subsection}{\numberline {3.3.3}Runge Kutta de orden 4 (RK4)}{33}% 
-\contentsline {subsection}{\numberline {3.3.4}Métodos de Runge Kutta simplécticos}{34}% 
-\contentsline {subsection}{\numberline {3.3.5}Métodos implícitos}{34}% 
-\contentsline {subsubsection}{Euler hacia atrás}{34}% 
-\contentsline {chapter}{\numberline {4}Teoría de control óptimo}{35}% 
-\contentsline {section}{\numberline {4.1}La ecuación de Hamilton-Jacobi-Bellman}{36}% 
-\contentsline {section}{\numberline {4.2}Ecuación adjunta}{38}% 
-\contentsline {section}{\numberline {4.3}Principio del Máximo}{38}% 
-\contentsline {section}{\numberline {4.4}Notas del capítulo}{38}% 
-\contentsline {chapter}{\numberline {5}Relación entre las ecuaciones diferenciales y las ResNets}{41}% 
-\contentsline {section}{\numberline {5.1}Notas del capítulo}{41}% 
-\contentsline {chapter}{\numberline {6}Resultados}{43}% 
-\contentsline {section}{\numberline {6.1}Descripción del problema}{43}% 
-\contentsline {section}{\numberline {6.2}Métricas para clasificación Binaria}{44}% 
-\contentsline {subsection}{\numberline {6.2.1}Matriz de confusión}{45}% 
-\contentsline {subsection}{\numberline {6.2.2}Exactitud}{46}% 
-\contentsline {subsection}{\numberline {6.2.3}Precisión}{47}% 
-\contentsline {subsection}{\numberline {6.2.4}Sensibilidad}{47}% 
-\contentsline {subsection}{\numberline {6.2.5}\leavevmode {\color {red}F1-score}}{47}% 
-\contentsline {section}{\numberline {6.3}Métricas para clasificación multiclase}{48}% 
-\contentsline {section}{\numberline {6.4}Notas del capítulo}{49}% 
-\contentsline {chapter}{\numberline {7}Notas}{53}% 
+\contentsline {chapter}{\numberline {1}Preliminares}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Resultados de Cálculo y Álgebra lineal}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Visión Computacional}{5}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Inteligencia artificial y Aprendizaje profundo}{5}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}Sobreajusto y Desajuste}{6}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Regularización}{8}{subsection.1.3.2}% 
+\contentsline {subsection}{\numberline {1.3.3}Función de activación. }{9}{subsection.1.3.3}% 
+\contentsline {subsection}{\numberline {1.3.4}Transferencia de aprendizaje}{10}{subsection.1.3.4}% 
+\contentsline {subsection}{\numberline {1.3.5}Conjuntos desbalanceados}{11}{subsection.1.3.5}% 
+\contentsline {subsubsection}{Afrontar un problema con un conjunto desbalanceado}{12}{section*.3}% 
+\contentsline {subsubsection}{Métricas distintas a la exactitud}{13}{section*.4}% 
+\contentsline {chapter}{\numberline {2}Redes Neuronales Convolucionales}{15}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Convoluciones}{15}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Stride}{17}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Convoluciones con múltiples canales}{18}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Padding}{19}{subsection.2.1.3}% 
+\contentsline {subsection}{\numberline {2.1.4}Agrupación (Pooling)}{21}{subsection.2.1.4}% 
+\contentsline {subsubsection}{\leavevmode {\color {red}Global pooling layers} }{22}{section*.5}% 
+\contentsline {subsection}{\numberline {2.1.5}Convolución como una operación lineal}{23}{subsection.2.1.5}% 
+\contentsline {section}{\numberline {2.2}Redes Neuronales Convolucionales}{23}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Descenso del Gradiente Estocástico}{24}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Optimizadores}{25}{subsection.2.2.2}% 
+\contentsline {subsubsection}{AdaGrad}{25}{section*.6}% 
+\contentsline {subsubsection}{RMSProp}{26}{section*.7}% 
+\contentsline {subsubsection}{Adam}{26}{section*.8}% 
+\contentsline {subsection}{\numberline {2.2.3}Propagación hacia atrás}{27}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.4}Normalización por Lotes}{27}{subsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.2.5}Desvanecimiento del gradiente}{28}{subsection.2.2.5}% 
+\contentsline {subsection}{\numberline {2.2.6}CNNs en el Estado del Arte}{29}{subsection.2.2.6}% 
+\contentsline {section}{\numberline {2.3}ResNet}{29}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Inicialización de parámetros}{32}{subsection.2.3.1}% 
+\contentsline {subsubsection}{Inicialización con Ceros}{32}{section*.9}% 
+\contentsline {subsubsection}{Inicialización Aleatoria}{33}{section*.10}% 
+\contentsline {subsubsection}{Inicialización de Glorot}{33}{section*.11}% 
+\contentsline {subsubsection}{Inicialización con Kaiming}{33}{section*.12}% 
+\contentsline {subsection}{\numberline {2.3.2}Estabilidad en las redes Neuronales}{33}{subsection.2.3.2}% 
+\contentsline {chapter}{\numberline {3}Ecuaciones diferenciales}{35}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Problemas de valor inicial}{36}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Existencia, unicidad y continuidad de soluciones}{36}{subsection.3.1.1}% 
+\contentsline {section}{\numberline {3.2}Estabilidad}{36}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Problema Lineal}{37}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}IVP no lineales (El caso general)}{38}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Métodos de Runge-Kutta}{39}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Método de Euler}{39}{subsection.3.3.1}% 
+\contentsline {subsubsection}{Error de truncamiento local}{40}{section*.13}% 
+\contentsline {subsubsection}{Error de truncamiento global}{40}{section*.14}% 
+\contentsline {subsection}{\numberline {3.3.2}Método de Euler modificado}{41}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Método general}{41}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}Runge Kutta de orden 4 (RK4)}{42}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.5}Métodos de Runge Kutta simplécticos}{42}{subsection.3.3.5}% 
+\contentsline {subsection}{\numberline {3.3.6}Métodos implícitos}{43}{subsection.3.3.6}% 
+\contentsline {subsubsection}{Euler hacia atrás}{43}{section*.15}% 
+\contentsline {chapter}{\numberline {4}Teoría de control óptimo}{45}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}La ecuación de Hamilton-Jacobi-Bellman}{46}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Ecuación adjunta}{48}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Relación entre las ecuaciones diferenciales y las ResNets}{51}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Control Óptimo para DL}{51}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}DNNs como discretización de ODEs}{52}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Estabilidad de Redes por medio de ODEs}{53}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}PolyNet}{54}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}FractalNet}{55}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Midpoint Network}{57}{subsection.5.2.4}% 
+\contentsline {subsection}{\numberline {5.2.5}IMEXnet}{57}{subsection.5.2.5}% 
+\contentsline {subsection}{\numberline {5.2.6}Otros Avances}{58}{subsection.5.2.6}% 
+\contentsline {chapter}{\numberline {6}Experimentos y Resultados}{61}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Descripción del problema}{61}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Métricas para clasificación Binaria}{62}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Matriz de confusión}{63}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}Exactitud}{64}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {6.2.3}Sensibilidad y Especificidad}{65}{subsection.6.2.3}% 
+\contentsline {subsection}{\numberline {6.2.4}Precisión}{65}{subsection.6.2.4}% 
+\contentsline {subsection}{\numberline {6.2.5}\leavevmode {\color {red}F1-score}}{65}{subsection.6.2.5}% 
+\contentsline {section}{\numberline {6.3}Métricas para clasificación multiclase}{66}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}Métricas Macro}{68}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}Métricas Ponderadas}{68}{subsection.6.3.2}% 

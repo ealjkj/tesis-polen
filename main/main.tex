@@ -19,6 +19,7 @@
 \usepackage{amsfonts}
 \renewcommand{\baselinestretch}{1.5}
 \usepackage{cite}
+\usepackage{hyperref}
 
 % Theorems and definitions
 \theoremstyle{plain}
@@ -37,13 +38,14 @@
 \newcommand{\N}{\mathbb N}  
 \newcommand{\Z}{\mathbb Z}  
 \newcommand{\mf}[1]{\mathbf{#1}}
+\DeclareMathOperator{\vect}{vec}
 
 \begin{document}
 \title{Tesis primera parte.}
 \author{Jorge Ballote}
 \thispagestyle{plain}
 \pagenumbering{Roman}
-% \input{agradecimientos.tex}
+\input{agradecimientos.tex}
 \tableofcontents
 % \input{resumen.tex}
 \newpage
@@ -62,11 +64,7 @@
 
 \bibliographystyle{unsrt}
 \bibliography{papers}
-
-\chapter{Notas}
-    \begin{enumerate}
-        \item La notitas rojas son cosas que aún deben investigarse o cambiarse. Las notas azules representan textos que no están mal, pero que pueden escribirse de una mejor manera.
-        \item En preeliminares pretendo definir lo que es una imagen (una función) y un kernel.
-    \end{enumerate}
-
+% \appendix
+% \chapter{EigenValores}
+% Hola
 \end{document}

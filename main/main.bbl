@@ -11,6 +11,49 @@ Tom~M. Mitchell.
 \newblock {\em Machine Learning}.
 \newblock McGraw-Hill series in computer science. McGraw-Hill, 1 edition, 1997.
 
+\bibitem{transfer}
+Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, Yongchun Zhu, Hengshu Zhu, Hui
+  Xiong, and Qing He.
+\newblock A comprehensive survey on transfer learning.
+\newblock {\em CoRR}, abs/1911.02685, 2019.
+
+\bibitem{grafica}
+positividad covid-19 en méxico.
+
+\bibitem{VAE}
+Diederik~P Kingma and Max Welling.
+\newblock Auto-encoding variational bayes, 2014.
+
+\bibitem{SMOTE}
+Kevin~W. Bowyer, Nitesh~V. Chawla, Lawrence~O. Hall, and W.~Philip Kegelmeyer.
+\newblock {SMOTE:} synthetic minority over-sampling technique.
+\newblock {\em CoRR}, abs/1106.1813, 2011.
+
+\bibitem{MSMOTE}
+Shengguo Hu, Yanfeng Liang, Lintao Ma, and Ying He.
+\newblock Msmote: Improving classification performance when training data is
+  imbalanced.
+\newblock {\em Computer Science and Engineering, International Workshop on},
+  2:13--17, 01 2009.
+
+\bibitem{firstCnn}
+Kunihiko Fukushima.
+\newblock Neocognitron: A self-organizing neural network model for a mechanism
+  of pattern recognition unaffected by shift in position.
+\newblock {\em Biological Cybernetics}, 36(4):193--202, Apr 1980.
+
+\bibitem{lecunCnn}
+Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock {\em Proceedings of the IEEE}, 86(11):2278--2324, 1998.
+
+\bibitem{alexnet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Proceedings of the 25th International Conference on Neural
+  Information Processing Systems - Volume 1}, NIPS'12, page 1097–1105, Red
+  Hook, NY, USA, 2012. Curran Associates Inc.
+
 \bibitem{CNNdefinition}
 Linan Zhang and Hayden Schaeffer.
 \newblock Forward stability of resnet and its variants.
@@ -20,6 +63,17 @@ Linan Zhang and Hayden Schaeffer.
 Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 \newblock {\em Deep Learning}.
 \newblock MIT Press, 2016.
+
+\bibitem{convolution_for_quaternion}
+Mawardi Bahri, Ryuichi Ashino, and R{\'e}mi Vaillancourt.
+\newblock Convolution theorems for quaternion fourier transform: Properties and
+  applications.
+\newblock {\em Abstract and Applied Analysis}, 2013:162769, Nov 2013.
+
+\bibitem{convolution_invariance}
+Allen~C. Pipkin.
+\newblock {\em Volterra Equations}.
+\newblock Springer New York, New York, NY, 1991.
 
 \bibitem{padding}
 Md.~Amirul Islam, Matthew Kowal, Sen Jia, Konstantinos~G. Derpanis, and Neil
@@ -41,38 +95,160 @@ Y-Lan Boureau, Jean Ponce, and Yann LeCun.
   International Conference on Machine Learning}, ICML'10, page 111–118,
   Madison, WI, USA, 2010. Omnipress.
 
-\bibitem{batchNormalization}
-Sergey Ioffe and Christian Szegedy.
-\newblock Batch normalization: Accelerating deep network training by reducing
-  internal covariate shift.
-\newblock {\em CoRR}, abs/1502.03167, 2015.
-
-\bibitem{alexnet}
-Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
-\newblock Imagenet classification with deep convolutional neural networks.
-\newblock In {\em Proceedings of the 25th International Conference on Neural
-  Information Processing Systems - Volume 1}, NIPS'12, page 1097–1105, Red
-  Hook, NY, USA, 2012. Curran Associates Inc.
-
-\bibitem{zfnet}
-Matthew~D. Zeiler and Rob Fergus.
-\newblock Visualizing and understanding convolutional networks.
-\newblock {\em CoRR}, abs/1311.2901, 2013.
+\bibitem{imageNet_dataset}
+Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li~Fei-Fei.
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In {\em 2009 IEEE conference on computer vision and pattern
+  recognition}, pages 248--255. Ieee, 2009.
 
 \bibitem{resnet0}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
 \newblock Deep residual learning for image recognition.
 \newblock {\em CoRR}, abs/1512.03385, 2015.
 
+\bibitem{adagrad}
+John Duchi, Elad Hazan, and Yoram Singer.
+\newblock Adaptive subgradient methods for online learning and stochastic
+  optimization.
+\newblock {\em Journal of Machine Learning Research}, 12(61):2121--2159, 2011.
+
+\bibitem{adam}
+Diederik Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em International Conference on Learning Representations}, 12 2014.
+
+\bibitem{batchNormalization}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock {\em CoRR}, abs/1502.03167, 2015.
+
+\bibitem{image:cnn}
+What is a convolutional neural network?
+
+\bibitem{zfnet}
+Matthew~D. Zeiler and Rob Fergus.
+\newblock Visualizing and understanding convolutional networks.
+\newblock {\em CoRR}, abs/1311.2901, 2013.
+
+\bibitem{DBLP:journals/corr/abs-1806-03751}
+Michael Hauser, Sean Gunn, Samer~Saab Jr., and Asok Ray.
+\newblock State space representations of deep neural networks.
+\newblock {\em CoRR}, abs/1806.03751, 2018.
+
+\bibitem{pytorch_library}
+Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory
+  Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban
+  Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan
+  Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu~Fang, Junjie Bai, and Soumith
+  Chintala.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle
+  Alch\'{e}-Buc, E.~Fox, and R.~Garnett, editors, {\em Advances in Neural
+  Information Processing Systems 32}, pages 8024--8035. Curran Associates,
+  Inc., 2019.
+
+\bibitem{weight_initialization}
+Wadii Boulila, Maha Driss, Mohammed Al{-}Sarem, Faisal Saeed, and Moez Krichen.
+\newblock Weight initialization techniques for deep learning algorithms in
+  remote sensing: Recent trends and future perspectives.
+\newblock {\em CoRR}, abs/2102.07004, 2021.
+
+\bibitem{glorot_initialization}
+Xavier Glorot and Y.~Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock {\em Journal of Machine Learning Research - Proceedings Track},
+  9:249--256, 01 2010.
+
+\bibitem{kaiming}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Delving deep into rectifiers: Surpassing human-level performance on
+  imagenet classification.
+\newblock {\em CoRR}, abs/1502.01852, 2015.
+
 \bibitem{stable_resnets}
 Eldad Haber and Lars Ruthotto.
 \newblock Stable architectures for deep neural networks.
 \newblock {\em CoRR}, abs/1705.03341, 2017.
 
+\bibitem{sauer}
+Timothy Sauer.
+\newblock {\em Numerical Analysis}.
+\newblock Addison-Wesley Publishing Company, USA, 2nd edition, 2011.
+
+\bibitem{Ascher}
+Uri~M. Ascher.
+\newblock Numerical methods for evolutionary differential equations.
+\newblock 2008.
+
+\bibitem{ode_history}
+T.~Archibald, Craig Fraser, and Ivor Grattan-Guinness.
+\newblock The history of differential equations, 1670--1950.
+\newblock {\em Oberwolfach Reports}, pages 2729--2794, 01 2004.
+
+\bibitem{geometry_and_odes}
+Jan Dereziński and Adam Latosiński.
+\newblock From heun class equations to painlev\'e equations, 07 2020.
+
+\bibitem{classical_mechanics}
+Gerd Baumann.
+\newblock {\em Mathematica for Theoretical Physics: Classical Mechanics and
+  Nonlinear Dynamics}.
+\newblock Springer, 2nd edition, 2005.
+
+\bibitem{electromagnetism_and_odes}
+Richard Fitzpatrick.
+\newblock Maxwell’s equations and the principles of electromagnetism.
+\newblock 2008.
+
+\bibitem{richard-Bellman}
+F.~Haas.
+\newblock Review: Richard bellman, stability theory of differential equations.
+\newblock {\em Bulletin of the American Mathematical Society}, 60(4):400 --
+  401, 1954.
+
+\bibitem{Hyers-Ulam}
+S.-M. Jung.
+\newblock Hyers-ulam stability of linear differential equations of first order.
+\newblock {\em Applied Mathematics Letters}, 17(10):1135--1140, 2004.
+
+\bibitem{ascher-book}
+Robert M. M.~Mattheij Uri M.~Ascher and Robert~D. Russell.
+\newblock {\em Numerical Solution of Boundary Value Problems for Ordinary
+  Differential Equations (Classics in Applied Mathematics)}.
+\newblock SIAM, 1987.
+
 \bibitem{book:110336}
 John~C. Butcher.
 \newblock {\em Numerical methods for ordinary differential equations}.
 \newblock Wiley, 2nd ed edition, 2008.
+
+\bibitem{symplecticRK}
+J.~M. Sanz-Serna.
+\newblock Symplectic runge-kutta schemes for adjoint equations, automatic
+  differentiation, optimal control and more, 2015.
+
+\bibitem{Sanz-Serna1988-mk}
+J~M Sanz-Serna.
+\newblock Runge-kutta schemes for hamiltonian systems.
+\newblock {\em BIT Numerical Mathematics}, 28(4):877--883, December 1988.
+
+\bibitem{Lasagni1988-ov}
+F~M Lasagni.
+\newblock Canonical {Runge-Kutta} methods.
+\newblock {\em Zeitschrift f{\"u}r angewandte Mathematik und Physik ZAMP},
+  39(6):952--953, November 1988.
+
+\bibitem{suresh}
+Suresh~P. Sethi.
+\newblock {\em {Optimal Control Theory}}.
+\newblock Number 978-3-319-98237-3 in Springer Books. Springer, December 2019.
+
+\bibitem{Engineerin_Economy}
+C.~Patrick~Koelling William G.~Sullivan, Elin M.~Wicks.
+\newblock {\em Engineering Economy}.
+\newblock Pearson Education, 16th edition, c2015.
 
 \bibitem{optimal_principle}
 Richard Bellman.
@@ -80,11 +256,107 @@ Richard Bellman.
 \newblock Princeton Landmarks in Mathematics and Physics. Dover Publications,
   2003.
 
-\bibitem{CIFAR}
-Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.
-\newblock Cifar-10 (canadian institute for advanced research).
+\bibitem{numerical_ode_and_architectures}
+Yiping Lu, Aoxiao Zhong, Quanzheng Li, and Bin Dong.
+\newblock Beyond finite layer neural networks: Bridging deep architectures and
+  numerical differential equations.
+\newblock {\em CoRR}, abs/1710.10121, 2017.
+
+\bibitem{DBLP:journals/corr/LiaoP16}
+Qianli Liao and Tomaso~A. Poggio.
+\newblock Bridging the gaps between residual learning, recurrent neural
+  networks and visual cortex.
+\newblock {\em CoRR}, abs/1604.03640, 2016.
+
+\bibitem{odes_and_ml_survey}
+Xinshi Chen.
+\newblock Review: Ordinary differential equations for deep learning.
+\newblock {\em CoRR}, abs/1911.00502, 2019.
+
+\bibitem{optimal_control_approach}
+Qianxiao Li and Shuji Hao.
+\newblock An optimal control approach to deep learning and applications to
+  discrete-weight neural networks.
+\newblock {\em CoRR}, abs/1803.01299, 2018.
+
+\bibitem{mean_field_optimal_control}
+Weinan E, Jiequn Han, and Qianxiao Li.
+\newblock A mean-field optimal control formulation of deep learning.
+\newblock {\em Research in the Mathematical Sciences}, 6(1), Dec 2018.
+
+\bibitem{PMP_for_DL}
+Qianxiao Li, Long Chen, Cheng Tai, and Weinan E.
+\newblock Maximum principle based algorithms for deep learning.
+\newblock {\em CoRR}, abs/1710.09513, 2017.
+
+\bibitem{DL_as_OCP}
+Martin Benning, Elena Celledoni, Matthias~J. Ehrhardt, Brynjulf Owren, and
+  Carola-Bibiane Schönlieb.
+\newblock Deep learning as optimal control problems: models and numerical
+  methods, 2019.
+
+\bibitem{dnns_motivated_by_pdes}
+Lars Ruthotto and Eldad Haber.
+\newblock Deep neural networks motivated by partial differential equations.
+\newblock {\em CoRR}, abs/1804.04272, 2018.
+
+\bibitem{polynet}
+Xingcheng Zhang, Zhizhong Li, Chen~Change Loy, and Dahua Lin.
+\newblock Polynet: {A} pursuit of structural diversity in very deep networks.
+\newblock {\em CoRR}, abs/1611.05725, 2016.
+
+\bibitem{fractalNet}
+Gustav Larsson, Michael Maire, and Gregory Shakhnarovich.
+\newblock Fractalnet: Ultra-deep neural networks without residuals.
+\newblock {\em CoRR}, abs/1605.07648, 2016.
+
+\bibitem{reversible_nets}
+Bo~Chang, Lili Meng, Eldad Haber, Lars Ruthotto, David Begert, and Elliot
+  Holtham.
+\newblock Reversible architectures for arbitrarily deep residual neural
+  networks.
+\newblock {\em CoRR}, abs/1709.03698, 2017.
+
+\bibitem{reversible_definitions}
+Aidan~N. Gomez, Mengye Ren, Raquel Urtasun, and Roger~B. Grosse.
+\newblock The reversible residual network: Backpropagation without storing
+  activations.
+\newblock {\em CoRR}, abs/1707.04585, 2017.
+
+\bibitem{computer_methods}
+Linda Ruth~Petzold Uri M.~Ascher.
+\newblock {\em Computer Methods for Ordinary Differential Equations and
+  Differential-Algebraic Equations}.
+\newblock 1998.
+
+\bibitem{imex_method}
+Uri~M. Ascher, Steven~J. Ruuth, and Brian T.~R. Wetton.
+\newblock Implicit-explicit methods for time-dependent partial differential
+  equations.
+\newblock {\em SIAM Journal on Numerical Analysis}, 32(3):797--823, 1995.
+
+\bibitem{INEX-NET}
+Eldad Haber, Keegan Lensink, Eran Treister, and Lars Ruthotto.
+\newblock Imexnet: {A} forward stable deep neural network.
+\newblock {\em CoRR}, abs/1903.02639, 2019.
+
+\bibitem{chang2019antisymmetricrnn}
+Bo~Chang, Minmin Chen, Eldad Haber, and Ed~H. Chi.
+\newblock Antisymmetricrnn: A dynamical system view on recurrent neural
+  networks, 2019.
+
+\bibitem{PDE_nets}
+Tian~Qi Chen, Yulia Rubanova, Jesse Bettencourt, and David Duvenaud.
+\newblock Neural ordinary differential equations.
+\newblock {\em CoRR}, abs/1806.07366, 2018.
 
 \bibitem{polen}
 Pollen challenge, 2020.
+
+\bibitem{f1score}
+Marina Sokolova, Nathalie Japkowicz, and Stan Szpakowicz.
+\newblock Beyond accuracy, f-score and roc: A family of discriminant measures
+  for performance evaluation.
+\newblock volume Vol. 4304, pages 1015--1021, 01 2006.
 
 \end{thebibliography}

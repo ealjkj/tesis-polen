@@ -1,9 +1,233 @@
 %%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER 1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \chapter{Relación entre las ecuaciones diferenciales y las ResNets}
+\label{odes_and_resnets}
+Después de la aparición de la ResNet, los esfuerzos por mejorar el desempeño de las redes dieron lugar al uso de Ecuaciones Diferenciales Ordinarias (ODEs por sus siglas en inglés).
+Las Ecuaciones Diferenciales Ordinarias (ODEs) se encuentran en más de una forma en la literatura de Redes Neuronales \cite{numerical_ode_and_architectures, DBLP:journals/corr/LiaoP16 }. En 2019 Xinshi Chen realizó una revisión de los artículos relacionados con esto \cite{odes_and_ml_survey}.
 
- %------------- Notas del capítulo
- \section{Notas del capítulo}
- \begin{enumerate}
-    \item -
- \end{enumerate}
+El uso de las ODEs en el aprendizaje profundo tiene dos líneas de investigación principales:
+\begin{enumerate}
+   \item El proceso de entrenamiento de una red como un problema de control óptimo.
+   \item Arquitecturas diseñadas con base en métodos numéricos de Ecuaciones Diferenciales.
+\end{enumerate}
+Se describen brevemente, ambas líneas dándo mayor importancia al segundo punto.
+\section{Control Óptimo para DL}
+El problema de clasificación, así como otros problemas de ML implican aprender una función $g: \mathbb R^d \to \mathbb R$. En este paradigma, es posible considerar el mapeo de $x$ a $g(x)$ como una evolución desde el estado inicial  $X(0) = x$ hasta el estado final $X(T)$, dónde la dinámica puede ser modelada por una ecuación diferencial $\dot X(t) = f(X(t), t)$.
+
+Por lo que es posible definir el problema de aprendizaje supervisado cómo un problema de control óptimo \cite{optimal_control_approach, mean_field_optimal_control}.
+\begin{equation}
+   \min_{\theta} C(X(T)) + \int_{0}^T R(\theta(t))dt
+\end{equation}
+\begin{equation}
+   \text{Sujeto a } \quad \dot X(t) = f(X(t), \theta(t), t), \quad X(0) = x_0, t\in [0,T].
+\end{equation}
+donde $R$ es el regularizador, y el control $\theta(t)$ los parámetros de la red. Resolver este problema, implica hallar un control óptimo $\theta^*$. Para ello, es posible usar la teoría desarrollada alrededor de la ecuación de HJB, y el Principio del Máximo de Pontryagin (PMP). Para resolver el PMP existen muchos métodos numéricos, sin embargo, la mayoría no son escalables, esto se explica en \cite{PMP_for_DL}, con lo que se propone el Método de Aproximaciones Sucesivas (MSA por su siglas en inglés). En \cite{DL_as_OCP} se pretende investigar la versión discreta de este problema. 
+%------------- Discretización de ODEs para DNNs
+\section{DNNs como discretización de ODEs}
+La propagación hacia adelante de una ResNet fue definida en la Sección (\ref{resnet_section}) por la siguiente ecuación
+\begin{equation} 
+   \label{resnet_equation_again}
+   X_{n+1} = X_n + F(X_n).
+\end{equation}
+En algunas investigaciones \cite{DBLP:journals/corr/LiaoP16, dnns_motivated_by_pdes, numerical_ode_and_architectures} se establece una conexión entre la ecuación (\ref{resnet_equation_again}) y la forma discreta de una ecuación diferencial. La versión discreta es
+\begin{equation} 
+   \label{discrete_resnet}
+   X_{n+1} -X_n =  F(X_n), \quad n=1,2,...,N,
+\end{equation}
+siendo la versión continua 
+\begin{equation}
+   \label{continuos_resnet}
+   \dot X(t) = F(X(t),t), \quad t\in [0,T], 
+\end{equation}
+dónde $F$ puede ser la composición de activación, con convoluciones y normalizaciones. Un ejemplo es: 
+\begin{equation}
+   \label{example_of_f}
+   F(X(t), t) = \sigma(X(t)A(t) + b(t)).
+\end{equation}
+La discretización se vuelve más evidente cuando se agrega el factor $h$ de estabilidad, en la ecuación (\ref{discrete_resnet})
+\begin{equation} 
+   \label{evident_discretization}
+   \frac{X_{n+1} -X_n}{h} =  F(X_n), \quad n=1,2,...,N.
+\end{equation}
+Nótese que reescribiendo (\ref{evident_discretization}) se tiene el método de Euler descrito en la Sección \ref{section:euler_method} para resolver el problema de valor inicial (\ref{continuos_resnet}) con $X(0) = X_0$.
+\begin{equation}
+   X_{n+1} = X_n + hF(X_n, t_i).
+\end{equation}
+Analizando la ResNet cOmo una versión discreta de una Ecuación Diferencial, es posible hacer uso de la teoría de ecuaciones diferenciales desarrollada en el Capítulo \ref{odes_chapter}.
+%------------- Estabilidad
+\subsection{Estabilidad de Redes por medio de ODEs}
+En la sección \ref{resnet_stability_introduction} hubo una pequeña indroducción al concepto de estabilidad para las redes Neuronales. Sin embargo, ahora que se ha construido una conexión entre las redes y las ODEs, se puede hacer uso de los teoremas de la sección \ref{ode_stability} para estabilidad de ODEs.
+
+En \cite{stable_resnets} se hace un estudio sobre la estabilidad de las ResNets utilizando ecuaciones diferenciales. Gracias a la Sección \ref{no_lineal_ivp} se conoce la condución suficiente para la estabilidad del IVP (\ref{continuos_resnet}) y es que $Re(\lambda) < 0$ para cada eigenvalor del jacobiano $J$ de $F$. De modo que puede reescribirse como 
+\begin{equation}
+   \label{stability_criteria}
+   \max_{n=1,2, ..., L} \text{Re}[\lambda_i(J(t))] \leq 0, \quad \forall t\in [0,T],
+\end{equation}  
+donde $\lambda_i(J(t))$ representa el $i$-ésimo eigenvalor del jacobiano de $F$. Tomando como $F = (F_1, F_2, \cdots, F_d)$ de la ecuación (\ref{example_of_f}) se tiene que 
+\begin{equation}
+   F(y) =  \sigma(Ay+ b)=
+   \left(\begin{matrix}
+      \sigma(a_{11}y_1 + \cdots + a_{1d}y_d + b)\\
+      \vdots  \\
+      \sigma(a_{d1}y_1 + \cdots + a_{dd}y_d  + b)
+   \end{matrix} \right)
+\end{equation}
+De modo que 
+\begin{equation}
+   F_j(y) = \sigma(a_{j1}y_1 + a_{j2}y_2 + \cdots + a_{jd}y_d + b)
+\end{equation}
+y por consiguiente, el jacobiano de $F$ queda determinado por las derivadas parciales:
+\begin{equation}
+   \frac{\partial F_j}{\partial y_k} = \frac{\sigma(a_{j1}y_1 + a_{j2}y_2 + \cdots + a_{jd}y_d + b)}{\partial y_k} = \sigma'(A_{j*}\cdot y+b)a_{jk},
+\end{equation}
+donde $A_{j*}$ representa el vector $[A_{j1}, A_{j2}, ...,A_{jd}]^T$. Por lo tanto, es posible escribir el Jacobiano de $F$ de la siguiente manera:
+\begin{equation}
+   J(t) = \left(\begin{matrix}
+      \sigma'(A_{1*}\cdot y+b)a_{11} & \sigma'(A_{1*}\cdot y+b)a_{12} &\cdots & \sigma'(A_{1*}\cdot y+b)a_{1d}\\
+      \sigma'(A_{2*}\cdot y+b)a_{21} & \sigma'(A_{1*}\cdot y+b)a_{22} &\cdots & \sigma'(A_{2*}\cdot y+b)a_{2d}\\
+      \vdots & \vdots & \ddots & \vdots \\
+      \sigma'(A_{d*}\cdot y+b)a_{d1} & \sigma'(A_{d*}\cdot y+b)a_{d2} &\cdots & \sigma'(A_{d*}\cdot y+b)a_{dd}
+   \end{matrix} \right)
+\end{equation}
+Debido al modo en que las matrices diagonales se multiplican con otras matrices, la ecuación anterior se puede reescribir como 
+\begin{align}
+   J &= \text{diag}(\sigma'(A_{1*}\cdot y), \cdots, \sigma'(A_{N*}\cdot y))A \\
+   &=  \text{diag}(\sigma'(Ay + b)) A.
+\end{align}
+Debido a que las funciones de activación son casi siempre no decrecientes, se asume que $\sigma'(\cdot) $ es una función positiva, es decir $\sigma(x) \geq 0$ para todo $x$. De modo que en \cite{stable_resnets} se propone que la ecuación (\ref{stability_criteria}) se satisface cuando 
+\begin{equation}
+   \label{stability_criteria2}
+   \max_{n=1,2, ..., N} \text{Re}[\lambda_i(A(t))] \leq 0, \quad \forall t\in [0,T].
+\end{equation}
+Así como la ResNet se equipara al método de Euler, existen otras redes que son equivalentes a distintos métodos numéricos para la resolusión de ODEs, algunas que incluso no fueron diseñadas con el propósito de replicar estos esquemas. A continuación se discuten algunas de estas arquitecturas.
+%------------- PolyNet
+\subsection{PolyNet}
+En 2017 se propuso la PolyNet \cite{polynet} por Zhang et al. Se implementó un módulo de \textsl{polincepción} que contiene polinomios con la operación de composición
+\begin{equation}
+   X_{n+1} = X_n + F(X_n) + F(F(X_n)) = (I+F+F^2)(X_n)
+\end{equation}
+En el artículo \cite{numerical_ode_and_architectures} se muestra la relación de algunas redes con las ecuaciones diferenciales. Particularmente, la PolyNet que inicialmente no está inspirada en una ODE, resulta ser de forma aproximada una discretización del método de Euler hacia atrás (Backward Euler). Veremos que la siguiente igualdad se cumple:
+\begin{equation}
+   \label{inverse_identity}
+   (I-hF)^{-1} = I + hF + (hF)^2 + \cdots + (hF)^n + \cdots 
+\end{equation}
+Para ello, es necesario ver que la composición de $(I-hF)$ con la suma infinita de (\ref{inverse_identity}) es la identidad.
+\begin{align*}
+   (I-hF)(I + hF + (hF)^2 + \cdots ) &=  (I + hF + (hF)^2 + \cdots + (hF)^n + \cdots ) \\
+      & \quad - hF(I + hF + (hF)^2 + \cdots + (hF)^n + \cdots ) \\
+   &= I + [hF - hF] + [(hF)^2 - (hF)^2] + \cdots \\
+   &= I.
+\end{align*}
+Consecuentemente 
+\begin{align*}
+   u_{n+1} &= (I + hF + (hF)^2 + \cdots + (hF)^n + \cdots)u_n \\
+      &=  (I-hF)^{-1}u_n,
+\end{align*}
+Aplicando la función $I-hF$ en ambos lados de la ecuación se tiene que 
+\begin{equation}
+   u_{n+1} - hF(u_{n+1}) = u_n, 
+\end{equation}
+y por consiguiente
+\begin{equation}
+   u_{n+1}  = u_n + hF(u_{n+1}).
+\end{equation}
+Nótese que esta ecuación es análoga a la ecuación (\ref{backward_euler}) del método de Euler hacia atrás.
+
+%------------- Fractal Net
+
+\subsection{FractalNet} Así como la PolyNet, la FractalNet \cite{fractalNet}propuesta en 2016, no fue inspirada inicialmente por un método numérico para resolver ODEs, pero de igual forma es posible encontrar una conexión.
+
+Sea $c$ el índice del fractal truncado $f_c(\cdot)$. Considérese el caso base:
+\begin{equation}
+   f_1(z) = \text{conv}(z)
+\end{equation}
+En \cite{fractalNet} define el fractal de manera recursiva
+\begin{equation}
+   \label{fractal_paper_eq}
+   f_{c+1}(z) = [(f_c  \circ f_c)(z)] \oplus [\text{conv}(z)],
+\end{equation}
+donde $\oplus$ es el operador de unión, y puede representar concatenación, adición, entre otras. Traduciendo la ecuación (\ref{fractal_paper_eq}) a la notación de convoluciones y tomando $a\oplus b = \frac{a+b}{2}$ queda como 
+\begin{equation}
+   \label{fractalnet_eq}
+   f_{c+1} =\frac{1}{2}k_c * z + \frac{1}{2}f_c(f_c(z)).
+\end{equation}
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=4.5in]{../cap4_optimal_control/src/fractalNet.png}
+   \caption{Representción gráfica de un bloque de la FractalNet extraída del artículo original \cite{fractalNet}.}
+\end{figure}
+La segunda iteración se obtiene de la siguiente manera:
+\begin{align}
+   f_2(z) = \frac{1}{2}k_1*z + \frac{1}{2}f_1(f_1(z)),
+\end{align}
+de modo que en \cite{numerical_ode_and_architectures} establecen una relación con el método de Runge Kutta de segundo orden.
+%------------- Midpoint Network
+ \subsection{Midpoint Network}
+ La Midpoint Network fue propuesta por Chang et al en 2018 junto con otras  redes reversibles \cite{reversible_nets}. El concepto de reversibilidad en las redes puede verse en \cite{reversible_definitions}, y su propósito es no tener que almacenar las activaciones en la memoria, debido a que estas pueden ser reconstruidas con la salida.
+ \begin{equation}
+    \frac{X_{n+1} - X_{n-1}}{2h} = F(X_n)
+ \end{equation}
+ Lo cuál da lugar a la siguiente propagación hacia adelante
+ \begin{equation}
+    X_{n+1} = X_{n-1} + 2hF(X_n)
+ \end{equation}
+ Se puede observar la reversibilidad algebráicamente, asumiendo que se tienen los dos últimos estados $X_L$ y $X_{L-1}$,
+ \begin{equation}
+    X_{L-2} = X_{L} - 2hF(X_{L-1}).
+ \end{equation}
+Por otro lado, en \cite{reversible_nets} se modifica la función (\ref{example_of_f}) para satisfacer el criterio (\ref{stability_criteria2}), de modo que se propone la función 
+\begin{equation}
+   F(X) = \sigma((A-A^T)X + b)
+\end{equation}
+debido a que todos los eigenvalores de $A -A^T$ son imaginarios. 
+\begin{equation}
+   X_{n+1} = \left\{ \begin{matrix}
+      2h\sigma((A_n - A_n^T)X_n + b_n), &  j= 0 \\
+      X_{i -1} + 2h\sigma((A_n - A_n)^TX_n + b_n), & j > 0.
+   \end{matrix}\right.
+\end{equation}
+ 
+%------------- IMEXnet
+\subsection{IMEXnet}
+Así como el problema de Valor Inicial puede ser estable, es importante que el método numérico seleccionado también goce de estabilidad. Los métodos explícitos destacan por su simplicidad, y sobre todo por su costo computacional reducido. Sin embargo, cuando se habla de estabilidad, los métodos implícitos suelen mostrar superioridad \cite{computer_methods}. Para aprovechar los beneficios de ambos tipos de métodos, se creó el método \textsl{Implícito-Explícito} (IMEX) en \cite{imex_method}. En su versión más simple, consiste en que si se tiene una ecuación de la siguiente forma:
+\begin{equation}
+   \dot  X = f(X,t) + g(X,t), \quad X(0) = X_0,
+\end{equation}
+se aproxima la solución con el uso del Euler hacia adelante para $f$ y Euler hacia atrás para $g$
+\begin{equation}
+   w_{n+1} = w_n + hf(w_n, t_{n}) + hf(w_{n+1}, t_{n+1}), \quad w_0 = y_0. 
+\end{equation}
+es posible variar los métodos implícitos e implícitos utilizados y convendrá usarlos dependiendo de la forma específica de $g$.
+
+Motivados por este método, surge una red llamada \textsl{IMEXnet} \cite{INEX-NET} propuesta por Haber y Ruthotto con el propósito de crear una red estable. Es posible reescribir la ecuación (\ref{continuos_resnet})
+\begin{equation}
+   \dot X(t) = F(X(t), t) + MX(t) - MX(t)
+\end{equation}
+donde se puede seleccionar la matriz $M$ cómo una matriz simétrica y definida positiva. El sumando $F(X(t), t) + MX(t)$ es el término explícito y $- MX(t)$ el término implícito. De modo que la discretización con el método IMEX es como sigue:
+\begin{align}
+   X_{n+1} = X_{i} + h[F(X_n) + MX_n] - hMX_{n+1} \\
+   \Rightarrow X_{n+1} + hMX_{n+1} = X_{n} + hF(X_n) + hMX_n \\
+   \Rightarrow (I + hM)X_{n+1} = X_{n} + hF(X_n) + hMX_n \\
+\end{align}
+Con lo que es la propagación hacia adelante de la IMEXnet queda determinada por:
+\begin{equation}
+   X_{n+1} = (I + hM)^{-1}(X_{n} + hF(X_n) + hMX_n).
+\end{equation}
+En el artículo original \cite{INEX-NET} se discuten sus ventajas y desventajas.
+
+%------------- Otros artículos
+\subsection{Otros Avances}
+En este capítulo se vio que se puede hacer un análisis de estabilidad de las redes \cite{chang2019antisymmetricrnn,stable_resnets}, gracias sus versiones continuas como IVPs. Además analizó una variedad de redes que guardan relación con métodos numéricos para la solución de ecuaciones diferenciales basadas en el sistema dinámico (\ref{continuos_resnet}).
+
+Entre las redes reversibles propuestas en \cite{reversible_nets} también se propuso una red basada en una ecuación de segundo orden 
+\begin{equation}
+   \ddot{X}(t) = -A(t)^T\sigma(A(t)X(t) + b(t)).
+\end{equation}
+En \cite{PDE_nets} se proponen redes basadas en Ecuaciones Diferenciales Parciales, basadas en el IVP 
+\begin{equation}
+   \partial_t X(\theta, t) = F(\theta(t), X(t)), \quad t\in (0,T]    
+\end{equation}
+\begin{equation}
+   X(\theta, 0) = X_0
+\end{equation}
+Se consideran redes basadas en métodos numéricos de múltiples pasos \cite{numerical_ode_and_architectures}, y también basadas en sistemas hamiltonianos \cite{stable_resnets,reversible_nets}.
+

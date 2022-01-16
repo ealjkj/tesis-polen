@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.27)  17 OCT 2021 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.27)  15 JAN 2022 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -693,34 +693,129 @@ LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 142.
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
+) (c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
-\c@theorem=\count139
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen183
+\Hy@linkcounter=\count139
+\Hy@pagecounter=\count140
+ (c:/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count141
+ (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4540.
+Package hyperref Info: Link nesting OFF on input line 4545.
+Package hyperref Info: Hyper index ON on input line 4548.
+Package hyperref Info: Plain pages OFF on input line 4555.
+Package hyperref Info: Backreferencing OFF on input line 4560.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4793.
+\c@Hy@tempcnt=\count142
+ (c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5152.
+\XeTeXLinkMargin=\dimen184
+\Fld@menulength=\count143
+\Field@Width=\dimen185
+\Fld@charsize=\dimen186
+Package hyperref Info: Hyper figures OFF on input line 6423.
+Package hyperref Info: Link nesting OFF on input line 6428.
+Package hyperref Info: Hyper index ON on input line 6431.
+Package hyperref Info: backreferencing OFF on input line 6438.
+Package hyperref Info: Link coloring OFF on input line 6443.
+Package hyperref Info: Link coloring with OCG OFF on input line 6448.
+Package hyperref Info: PDF/A mode OFF on input line 6453.
+LaTeX Info: Redefining \ref on input line 6493.
+LaTeX Info: Redefining \pageref on input line 6497.
+\Hy@abspage=\count144
+\c@Item=\count145
+\c@Hfootnote=\count146
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (c:/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
+\Fld@listcount=\count147
+\c@bookmark@seq@number=\count148
+ (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip60
+)
+\c@theorem=\count149
  (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 43.
  (c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -758,42 +853,21 @@ LaTeX Info: Redefining \% on input line 41.
 
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
-\scratchdimen=\dimen183
+\scratchcounter=\count150
+\scratchdimen=\dimen187
 \scratchbox=\box68
-\nofMPsegments=\count141
-\nofMParguments=\count142
+\nofMPsegments=\count151
+\nofMParguments=\count152
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count143
-\MPscratchDim=\dimen184
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
+\MPscratchCnt=\count153
+\MPscratchDim=\dimen188
+\MPnumerator=\count154
+\makeMPintoPDFobject=\count155
 \everyMPtoPDFconversion=\toks45
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
- (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
- (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
- (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
- (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
- (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)))) (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
@@ -801,7 +875,29 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
  (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) ABD: EveryShipout initializing macros (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.toc
+)) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring OFF on input line 43.
+ (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count156
+)
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
+ (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.out) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+ (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/agradecimientos.tex) [1
+
+
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
@@ -819,334 +915,437 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+) [3]
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+ [4])
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
-
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
- [2])
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
- [3] (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap1_preliminares/intro.tex
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+ [5] (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap1_preliminares/intro.tex
 Cap\'{\i }tulo 1.
 [1
 
 ]
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+<../cap1_preliminares/src/features.jpg, id=369, 361.35pt x 166.92451pt>
+File: ../cap1_preliminares/src/features.jpg Graphic file (type jpg)
+<use ../cap1_preliminares/src/features.jpg>
+Package pdftex.def Info: ../cap1_preliminares/src/features.jpg  used on input line 57.
+(pdftex.def)             Requested size: 433.62pt x 200.31096pt.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
  [2]
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
- [3]
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+ [3 <../cap1_preliminares/src/features.jpg>]
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
  [4]
 LaTeX Info: Redefining \. on input line 156.
 LaTeX Info: Redefining \% on input line 156.
  [5]
-LaTeX Info: Redefining \. on input line 170.
-LaTeX Info: Redefining \% on input line 170.
+LaTeX Info: Redefining \. on input line 174.
+LaTeX Info: Redefining \% on input line 174.
  [6]
-<../cap1_preliminares/src/activations.png, id=56, 614.295pt x 380.01974pt>
+<../cap1_preliminares/src/overfitting.png, id=431, 1070.5596pt x 506.6127pt>
+File: ../cap1_preliminares/src/overfitting.png Graphic file (type png)
+<use ../cap1_preliminares/src/overfitting.png>
+Package pdftex.def Info: ../cap1_preliminares/src/overfitting.png  used on input line 177.
+(pdftex.def)             Requested size: 433.62pt x 205.2002pt.
+<../cap1_preliminares/src/underfitting.png, id=432, 838.8138pt x 625.6173pt>
+File: ../cap1_preliminares/src/underfitting.png Graphic file (type png)
+<use ../cap1_preliminares/src/underfitting.png>
+Package pdftex.def Info: ../cap1_preliminares/src/underfitting.png  used on input line 192.
+(pdftex.def)             Requested size: 289.07999pt x 215.60909pt.
+LaTeX Info: Redefining \. on input line 194.
+LaTeX Info: Redefining \% on input line 194.
+ [7 <../cap1_preliminares/src/overfitting.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 209.
+LaTeX Info: Redefining \% on input line 209.
+ [8 <../cap1_preliminares/src/underfitting.png (PNG copy)>]
+<../cap1_preliminares/src/activations.png, id=449, 462.528pt x 346.896pt>
 File: ../cap1_preliminares/src/activations.png Graphic file (type png)
 <use ../cap1_preliminares/src/activations.png>
-Package pdftex.def Info: ../cap1_preliminares/src/activations.png  used on input line 185.
-(pdftex.def)             Requested size: 433.62pt x 268.25027pt.
+Package pdftex.def Info: ../cap1_preliminares/src/activations.png  used on input line 218.
+(pdftex.def)             Requested size: 433.62pt x 325.23007pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 188.
-LaTeX Info: Redefining \% on input line 188.
- [7]
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
- [8 <../cap1_preliminares/src/activations.PNG>]
-<../cap1_preliminares/src/unbalanced.png, id=65, 702.625pt x 358.33875pt>
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
+ [9]
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
+ [10 <../cap1_preliminares/src/activations.png>]
+<../cap1_preliminares/src/unbalanced.png, id=464, 1161.3789pt x 714.2685pt>
 File: ../cap1_preliminares/src/unbalanced.png Graphic file (type png)
 <use ../cap1_preliminares/src/unbalanced.png>
-Package pdftex.def Info: ../cap1_preliminares/src/unbalanced.png  used on input line 216.
-(pdftex.def)             Requested size: 433.62pt x 221.15071pt.
-
-Underfull \vbox (badness 2790) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 219.
-LaTeX Info: Redefining \% on input line 219.
- [9]
-LaTeX Info: Redefining \. on input line 226.
-LaTeX Info: Redefining \% on input line 226.
- [10 <../cap1_preliminares/src/unbalanced.png (PNG copy)>]
-<../cap1_preliminares/src/undersampling_oversampling.png, id=73, 767.86874pt x 263.98625pt>
+Package pdftex.def Info: ../cap1_preliminares/src/unbalanced.png  used on input line 250.
+(pdftex.def)             Requested size: 433.62pt x 266.68385pt.
+LaTeX Info: Redefining \. on input line 253.
+LaTeX Info: Redefining \% on input line 253.
+ [11]
+LaTeX Info: Redefining \. on input line 259.
+LaTeX Info: Redefining \% on input line 259.
+ [12 <../cap1_preliminares/src/unbalanced.png (PNG copy)>]
+<../cap1_preliminares/src/undersampling_oversampling.png, id=484, 1584.1584pt x 714.2685pt>
 File: ../cap1_preliminares/src/undersampling_oversampling.png Graphic file (type png)
 <use ../cap1_preliminares/src/undersampling_oversampling.png>
-Package pdftex.def Info: ../cap1_preliminares/src/undersampling_oversampling.png  used on input line 234.
-(pdftex.def)             Requested size: 433.62pt x 149.07596pt.
-LaTeX Info: Redefining \. on input line 243.
-LaTeX Info: Redefining \% on input line 243.
- [11 <../cap1_preliminares/src/undersampling_oversampling.png>]
-LaTeX Info: Redefining \. on input line 260.
-LaTeX Info: Redefining \% on input line 260.
- [12]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap2_CNNs/cnns.tex
+Package pdftex.def Info: ../cap1_preliminares/src/undersampling_oversampling.png  used on input line 268.
+(pdftex.def)             Requested size: 433.62pt x 195.51439pt.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+ [13 <../cap1_preliminares/src/undersampling_oversampling.png (PNG copy)>]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap2_CNNs/cnns.tex
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
- [13]
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
- [14
+ [14]
+Cap\'{\i }tulo 2.
+[15
 
 ]
-Cap\'{\i }tulo 2.
-[15]
-<../src/ch1convolution.jpg, id=91, 602.25pt x 256.70906pt>
-File: ../src/ch1convolution.jpg Graphic file (type jpg)
-<use ../src/ch1convolution.jpg>
-Package pdftex.def Info: ../src/ch1convolution.jpg  used on input line 27.
-(pdftex.def)             Requested size: 289.07999pt x 123.22285pt.
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
+<../src/ch1convolution.png, id=525, 1027.4385pt x 597.6729pt>
+File: ../src/ch1convolution.png Graphic file (type png)
+<use ../src/ch1convolution.png>
+Package pdftex.def Info: ../src/ch1convolution.png  used on input line 37.
+(pdftex.def)             Requested size: 289.07999pt x 168.15892pt.
 
-Overfull \hbox (18.81746pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 16 \T1/cmr/m/sl/12 CAPÍTULO 2.  INTRODUCCIÓN A LAS REDES NEURONALES CONVOLUCIONALES
- []
+Underfull \vbox (badness 6961) has occurred while \output is active []
 
-[16 <../src/ch1convolution.jpg>]
-<../cap2_CNNs/src/conv2d.png, id=97, 2513.39pt x 867.24pt>
-File: ../cap2_CNNs/src/conv2d.png Graphic file (type png)
-<use ../cap2_CNNs/src/conv2d.png>
-Package pdftex.def Info: ../cap2_CNNs/src/conv2d.png  used on input line 66.
-(pdftex.def)             Requested size: 289.07999pt x 99.73712pt.
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
- [17]
-<../cap2_CNNs/src/padding.png, id=102, 794.97pt x 275.1078pt>
-File: ../cap2_CNNs/src/padding.png Graphic file (type png)
-<use ../cap2_CNNs/src/padding.png>
-Package pdftex.def Info: ../cap2_CNNs/src/padding.png  used on input line 74.
-(pdftex.def)             Requested size: 361.34999pt x 125.0525pt.
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
-
-Overfull \hbox (18.81746pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 18 \T1/cmr/m/sl/12 CAPÍTULO 2.  INTRODUCCIÓN A LAS REDES NEURONALES CONVOLUCIONALES
- []
-
-[18 <../cap2_CNNs/src/conv2d.png (PNG copy)> <../cap2_CNNs/src/padding.png>]
-Underfull \vbox (badness 1742) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
- [19]
-Missing character: There is no v in font MnSymbolS12!
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
-
-Overfull \hbox (18.81746pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 20 \T1/cmr/m/sl/12 CAPÍTULO 2.  INTRODUCCIÓN A LAS REDES NEURONALES CONVOLUCIONALES
- []
-
-[20]
-<../cap2_CNNs/src/pooling.png, id=113, 518.93875pt x 452.69125pt>
-File: ../cap2_CNNs/src/pooling.png Graphic file (type png)
-<use ../cap2_CNNs/src/pooling.png>
-Package pdftex.def Info: ../cap2_CNNs/src/pooling.png  used on input line 134.
-(pdftex.def)             Requested size: 289.07999pt x 252.18604pt.
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
- [21 <../cap2_CNNs/src/pooling.png>]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
-
-Overfull \hbox (18.81746pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 22 \T1/cmr/m/sl/12 CAPÍTULO 2.  INTRODUCCIÓN A LAS REDES NEURONALES CONVOLUCIONALES
- []
-
-[22]
-<../cap2_CNNs/src/sgd.png, id=122, 560.0925pt x 336.25626pt>
-File: ../cap2_CNNs/src/sgd.png Graphic file (type png)
-<use ../cap2_CNNs/src/sgd.png>
-Package pdftex.def Info: ../cap2_CNNs/src/sgd.png  used on input line 187.
-(pdftex.def)             Requested size: 289.07999pt x 173.55615pt.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [16]
+<../cap2_CNNs/src/stride_convolution.png, id=534, 802.6788pt x 475.2957pt>
+File: ../cap2_CNNs/src/stride_convolution.png Graphic file (type png)
+<use ../cap2_CNNs/src/stride_convolution.png>
+Package pdftex.def Info: ../cap2_CNNs/src/stride_convolution.png  used on input line 55.
+(pdftex.def)             Requested size: 289.07999pt x 171.17883pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [17 <../src/ch1convolution.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [18 <../cap2_CNNs/src/stride_convolution.png (PNG copy)>]
+<../cap2_CNNs/src/conv2d.png, id=548, 1584.1584pt x 1726.5303pt>
+File: ../cap2_CNNs/src/conv2d.png Graphic file (type png)
+<use ../cap2_CNNs/src/conv2d.png>
+Package pdftex.def Info: ../cap2_CNNs/src/conv2d.png  used on input line 84.
+(pdftex.def)             Requested size: 289.07999pt x 315.05623pt.
+<../cap2_CNNs/src/padding.png, id=549, 1672.0869pt x 714.2685pt>
+File: ../cap2_CNNs/src/padding.png Graphic file (type png)
+<use ../cap2_CNNs/src/padding.png>
+Package pdftex.def Info: ../cap2_CNNs/src/padding.png  used on input line 92.
+(pdftex.def)             Requested size: 361.34999pt x 154.36035pt.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+ [19 <../cap2_CNNs/src/conv2d.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [20 <../cap2_CNNs/src/padding.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [21]
+<../cap2_CNNs/src/pooling.png, id=579, 1134.1572pt x 1123.0758pt>
+File: ../cap2_CNNs/src/pooling.png Graphic file (type png)
+<use ../cap2_CNNs/src/pooling.png>
+Package pdftex.def Info: ../cap2_CNNs/src/pooling.png  used on input line 140.
+(pdftex.def)             Requested size: 289.07999pt x 286.25201pt.
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+ [22 <../cap2_CNNs/src/pooling.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
  [23]
-LaTeX Info: Redefining \. on input line 201.
-LaTeX Info: Redefining \% on input line 201.
+<../cap2_CNNs/src/sgd.png, id=601, 707.7642pt x 545.6385pt>
+File: ../cap2_CNNs/src/sgd.png Graphic file (type png)
+<use ../cap2_CNNs/src/sgd.png>
+Package pdftex.def Info: ../cap2_CNNs/src/sgd.png  used on input line 193.
+(pdftex.def)             Requested size: 289.07999pt x 222.864pt.
 
-Overfull \hbox (18.81746pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 24 \T1/cmr/m/sl/12 CAPÍTULO 2.  INTRODUCCIÓN A LAS REDES NEURONALES CONVOLUCIONALES
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[24 <../cap2_CNNs/src/sgd.png (PNG copy)>]
-<../cap2_CNNs/src/timeline.png, id=129, 853.1875pt x 421.575pt>
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
+ [24]
+LaTeX Info: Redefining \. on input line 209.
+LaTeX Info: Redefining \% on input line 209.
+ [25 <../cap2_CNNs/src/sgd.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 247.
+LaTeX Info: Redefining \% on input line 247.
+ [26]
+LaTeX Info: Redefining \. on input line 266.
+LaTeX Info: Redefining \% on input line 266.
+ [27]
+<../cap2_CNNs/src/convolution_arquitecture.png, id=646, 774.895pt x 345.29pt>
+File: ../cap2_CNNs/src/convolution_arquitecture.png Graphic file (type png)
+<use ../cap2_CNNs/src/convolution_arquitecture.png>
+Package pdftex.def Info: ../cap2_CNNs/src/convolution_arquitecture.png  used on input line 277.
+(pdftex.def)             Requested size: 361.34999pt x 161.01656pt.
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+ [28 <../cap2_CNNs/src/convolution_arquitecture.png (PNG copy)>]
+<../cap2_CNNs/src/timeline.png, id=659, 853.1875pt x 421.575pt>
 File: ../cap2_CNNs/src/timeline.png Graphic file (type png)
 <use ../cap2_CNNs/src/timeline.png>
-Package pdftex.def Info: ../cap2_CNNs/src/timeline.png  used on input line 226.
-(pdftex.def)             Requested size: 289.07999pt x 142.83827pt.
+Package pdftex.def Info: ../cap2_CNNs/src/timeline.png  used on input line 291.
+(pdftex.def)             Requested size: 361.34999pt x 178.55267pt.
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+ [29 <../cap2_CNNs/src/timeline.png>]
+<../cap2_CNNs/src/resnet_block.png, id=671, 321.8424pt x 396.7623pt>
+File: ../cap2_CNNs/src/resnet_block.png Graphic file (type png)
+<use ../cap2_CNNs/src/resnet_block.png>
+Package pdftex.def Info: ../cap2_CNNs/src/resnet_block.png  used on input line 323.
+(pdftex.def)             Requested size: 175.87453pt x 216.81pt.
+LaTeX Info: Redefining \. on input line 331.
+LaTeX Info: Redefining \% on input line 331.
+ [30 <../cap2_CNNs/src/resnet_block.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 346.
+ (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
 
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 230.
-LaTeX Info: Redefining \% on input line 230.
- [25]
-LaTeX Info: Redefining \. on input line 250.
-LaTeX Info: Redefining \% on input line 250.
-
-Overfull \hbox (18.81746pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 26 \T1/cmr/m/sl/12 CAPÍTULO 2.  INTRODUCCIÓN A LAS REDES NEURONALES CONVOLUCIONALES
  []
 
-[26 <../cap2_CNNs/src/timeline.png>]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap3_ODEs/odes.tex
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
- [27]
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
 
-Overfull \hbox (18.81746pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 28 \T1/cmr/m/sl/12 CAPÍTULO 2.  INTRODUCCIÓN A LAS REDES NEURONALES CONVOLUCIONALES
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
+
  []
 
-[28
+<../cap2_CNNs/src/resnet50.png, id=684, 853.1875pt x 654.445pt>
+File: ../cap2_CNNs/src/resnet50.png Graphic file (type png)
+<use ../cap2_CNNs/src/resnet50.png>
+Package pdftex.def Info: ../cap2_CNNs/src/resnet50.png  used on input line 353.
+(pdftex.def)             Requested size: 289.07999pt x 221.73943pt.
 
-]
-Cap\'{\i }tulo 3.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 3668) has occurred while \output is active []
-
- [29]
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
- [30]
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
+LaTeX Info: Redefining \. on input line 357.
+LaTeX Info: Redefining \% on input line 357.
  [31]
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
- [32]
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
- [33]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap4_optimal_control/optimal_control.tex
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
+Underfull \vbox (badness 2781) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 364.
+LaTeX Info: Redefining \% on input line 364.
+ [32 <../cap2_CNNs/src/resnet50.png>]
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
+ [33]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap3_ODEs/odes.tex
+LaTeX Info: Redefining \. on input line 4.
+LaTeX Info: Redefining \% on input line 4.
  [34]
-Cap\'{\i }tulo 4.
+Cap\'{\i }tulo 3.
 [35
 
 ]
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
  [36]
-LaTeX Info: Redefining \. on input line 111.
-LaTeX Info: Redefining \% on input line 111.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
  [37]
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
- [38]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap6_NODES/nodes.tex
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+ [38]
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
  [39]
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+ [40]
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+ [41]
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
+ [42]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap4_optimal_control/optimal_control.tex
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
- [40
+ [43]
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [44
+
+]
+Cap\'{\i }tulo 4.
+[45]
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [46]
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+ [47]
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+ [48]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap6_NODES/nodes.tex
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+ [49]
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+ [50
 
 ]
 Cap\'{\i }tulo 5.
-) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap5_experimentos/experimentacion.tex [41]
+[51]
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+
+Overfull \hbox (43.27977pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 52 \T1/cmr/m/sl/12 CAPÍTULO 5.  RELACIÓN ENTRE LAS ECUACIONES DIFERENCIALES Y LAS RESNETS
+ []
+
+[52]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [53]
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
+
+Overfull \hbox (43.27977pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 54 \T1/cmr/m/sl/12 CAPÍTULO 5.  RELACIÓN ENTRE LAS ECUACIONES DIFERENCIALES Y LAS RESNETS
+ []
+
+[54]
+LaTeX Info: Redefining \. on input line 142.
+LaTeX Info: Redefining \% on input line 142.
+ [55]
+<../cap4_optimal_control/src/fractalNet.png, id=1050, 726.715pt x 501.875pt>
+File: ../cap4_optimal_control/src/fractalNet.png Graphic file (type png)
+<use ../cap4_optimal_control/src/fractalNet.png>
+Package pdftex.def Info: ../cap4_optimal_control/src/fractalNet.png  used on input line 155.
+(pdftex.def)             Requested size: 325.215pt x 224.60106pt.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
+
+Overfull \hbox (43.27977pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 56 \T1/cmr/m/sl/12 CAPÍTULO 5.  RELACIÓN ENTRE LAS ECUACIONES DIFERENCIALES Y LAS RESNETS
+ []
+
+[56 <../cap4_optimal_control/src/fractalNet.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+ [57]
+LaTeX Info: Redefining \. on input line 224.
+LaTeX Info: Redefining \% on input line 224.
+
+Overfull \hbox (43.27977pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 58 \T1/cmr/m/sl/12 CAPÍTULO 5.  RELACIÓN ENTRE LAS ECUACIONES DIFERENCIALES Y LAS RESNETS
+ []
+
+[58]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/../cap5_experimentos/experimentacion.tex
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [59]
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
 
 Overfull \hbox (43.27977pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 42 \T1/cmr/m/sl/12 CAPÍTULO 5.  RELACIÓN ENTRE LAS ECUACIONES DIFERENCIALES Y LAS RESNETS
+\T1/cmr/m/n/12 60 \T1/cmr/m/sl/12 CAPÍTULO 5.  RELACIÓN ENTRE LAS ECUACIONES DIFERENCIALES Y LAS RESNETS
  []
 
-[42
+[60
 
 ]
 Cap\'{\i }tulo 6.
-<../cap5_experimentos/src/polen.png, id=189, 407.121pt x 469.15276pt>
+<../cap5_experimentos/src/polen.png, id=1123, 407.121pt x 469.15276pt>
 File: ../cap5_experimentos/src/polen.png Graphic file (type png)
 <use ../cap5_experimentos/src/polen.png>
-Package pdftex.def Info: ../cap5_experimentos/src/polen.png  used on input line 11.
+Package pdftex.def Info: ../cap5_experimentos/src/polen.png  used on input line 13.
 (pdftex.def)             Requested size: 361.34999pt x 416.42787pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
- [44 <../cap5_experimentos/src/polen.PNG>]
+ [61]
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ [62 <../cap5_experimentos/src/polen.PNG>]
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
- [45]
-<../cap5_experimentos/src/matriz_confusion_binaria.png, id=200, 291.33844pt x 253.69781pt>
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [63]
+<../cap5_experimentos/src/matriz_confusion_binaria.png, id=1147, 291.33844pt x 253.69781pt>
 File: ../cap5_experimentos/src/matriz_confusion_binaria.png Graphic file (type png)
 <use ../cap5_experimentos/src/matriz_confusion_binaria.png>
-Package pdftex.def Info: ../cap5_experimentos/src/matriz_confusion_binaria.png  used on input line 49.
+Package pdftex.def Info: ../cap5_experimentos/src/matriz_confusion_binaria.png  used on input line 51.
 (pdftex.def)             Requested size: 291.33772pt x 253.69719pt.
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
- [46 <../cap5_experimentos/src/matriz_confusion_binaria.png>]
-<../cap5_experimentos/src/metricas.jpeg, id=206, 1436.36626pt x 1260.71pt>
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [64 <../cap5_experimentos/src/matriz_confusion_binaria.png>]
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+ [65]
+<../cap5_experimentos/src/metricas.jpeg, id=1173, 1436.36626pt x 1260.71pt>
 File: ../cap5_experimentos/src/metricas.jpeg Graphic file (type jpg)
 <use ../cap5_experimentos/src/metricas.jpeg>
-Package pdftex.def Info: ../cap5_experimentos/src/metricas.jpeg  used on input line 87.
+Package pdftex.def Info: ../cap5_experimentos/src/metricas.jpeg  used on input line 95.
 (pdftex.def)             Requested size: 289.07999pt x 253.71495pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
- [47]
-<../cap5_experimentos/src/confision_multiclase.png, id=211, 185.19188pt x 188.95593pt>
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+ [66 <../cap5_experimentos/src/metricas.jpeg>]
+<../cap5_experimentos/src/confision_multiclase.png, id=1182, 185.19188pt x 188.95593pt>
 File: ../cap5_experimentos/src/confision_multiclase.png Graphic file (type png)
 <use ../cap5_experimentos/src/confision_multiclase.png>
-Package pdftex.def Info: ../cap5_experimentos/src/confision_multiclase.png  used on input line 94.
+Package pdftex.def Info: ../cap5_experimentos/src/confision_multiclase.png  used on input line 130.
 (pdftex.def)             Requested size: 185.1914pt x 188.95546pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
- [48 <../cap5_experimentos/src/metricas.jpeg>]) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.bbl
+) (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.bbl
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [49 <../cap5_experimentos/src/confision_multiclase.png>]
+ [67 <../cap5_experimentos/src/confision_multiclase.png>]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [50
+ [68] [69
 
-] [51])
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
- [52]
-Cap\'{\i }tulo 7.
-[53
-
-] (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-) ) 
+]
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+ [70]
+LaTeX Info: Redefining \. on input line 156.
+LaTeX Info: Redefining \% on input line 156.
+ [71]
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+ [72]
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+ [73]
+LaTeX Info: Redefining \. on input line 337.
+LaTeX Info: Redefining \% on input line 337.
+ [74])
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
+ [75]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+ (c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.aux
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 055E6D3D0A9544011715083E54D6C831;4695.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
+ ) 
 Here is how much of TeX's memory you used:
- 18734 strings out of 492167
- 338678 string characters out of 6129173
- 361409 words of memory out of 5000000
- 22669 multiletter control sequences out of 15000+600000
- 25322 words of font info for 68 fonts, out of 8000000 for 9000
+ 22853 strings out of 492167
+ 402526 string characters out of 6129173
+ 445978 words of memory out of 5000000
+ 26267 multiletter control sequences out of 15000+600000
+ 26671 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,10n,52p,845b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.pdf (56 pages, 1600474 bytes).
+ 52i,11n,52p,810b,694s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolS.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on c:/Users/Jorch/Desktop/escuela/respaldo_tesis/main/main.pdf (80 pages, 3382668 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1416 PDF objects out of 1440 (max. 8388607)
+ 1273 compressed objects within 13 object streams
+ 486 named destinations out of 1000 (max. 500000)
+ 614 words of extra memory for PDF output out of 10000 (max. 10000000)
 
